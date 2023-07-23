@@ -1,0 +1,10 @@
+.header {
+    padding: 5px 0 5px;
+    height: 56px;
+}
+
+.header_logo{
+    width: 43;
+    height: 46;
+    color: #C8C8C8;
+}
