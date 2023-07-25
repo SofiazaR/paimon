@@ -1,0 +1,19 @@
+.navigation {
+    margin-bottom: 30px;
+}
+
+.navigation_container {
+    padding: 0;
+    min-width: 100vw;
+}
+
+.navigation_list {
+    display: flex;
+
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.navigation_button {
+    white-space: nowrap;
+}

@@ -11,8 +11,6 @@ html {
 }
 
 body {
-    font-family: Rubik, sans-serif;
-    font-family: Cousine, sans-serif;
     min-width: 360px;
     min-height: 100vh;
     background-color: #444;
@@ -50,6 +48,19 @@ h1, h2, h3, p, figure {
     margin: 0;
 }
 
+h1,h2,h3 {
+/* H1 */
+font-family: Rubik;
+font-weight: 900;
+}
+
+p {
+/* Text */
+font-family: Cousine;
+font-style: normal;
+font-weight: 400;
+}
+
 fieldset {
     padding: 0;
     bottom: 0;
@@ -67,6 +78,45 @@ fieldset {
     margin: 0 auto;
 }   
 
-@media (min-width:768px) {
-    
+@media (max-width:768px) {
+    html {
+        --padding-container: 64px
+    }
+
+    p.small {
+        /* Mob/Text small */
+        font-size: 12px;
+        line-height: 16px; /* 150% */
+        }
+    p.medium {
+        /* Mob/Text medium */
+        font-size: 14px;
+        line-height: 20px; /* 150% */
+        }
+    p.large {
+         /* Mob/Text large */
+        font-size: 16px;
+        line-height: 24px; /* 150% */
+        }
+}
+
+@media (min-width:1280px) {
+    html {
+        --container: 1180px
+    }
+    p.small {
+        /* Web/Text small */
+        font-size: 14px;
+        line-height: 20px; /* 150% */
+        }
+    p.medium {
+        /* Web/Text medium */
+        font-size: 16px;
+        line-height: 24px; /* 150% */
+        }
+    p.large {
+         /* Web/Text large */
+        font-size: 20px;
+        line-height: 28px; /* 150% */
+        }
 }

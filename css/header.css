@@ -8,3 +8,15 @@
     height: 46;
     color: #C8C8C8;
 }
+
+@media (min-width:768px) {
+    html {
+        --padding-container: 64px
+    }
+}
+
+@media (min-width:1280px) {
+    html {
+        --container: 1180px
+    }
+}
